@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品评分</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <style type="text/css">
+
+    </style>
+
+</head>
+<body>
+    <div class="body">
+        <p>宝贝与描述相符(打分匿名)</p>
+        <div class="img">
+            <img src="images/star0.png" onmouseover="starPic(1)" onmouseout="hide(1)" onclick="qd(1)">
+            <img src="images/star0.png" onmouseover="starPic(2)" onmouseout="hide(2)" onclick="qd(2)">
+            <img src="images/star0.png" onmouseover="starPic(3)" onmouseout="hide(3)" onclick="qd(3)">
+            <img src="images/star0.png" onmouseover="starPic(4)" onmouseout="hide(4)" onclick="qd(4)">
+            <img src="images/star0.png" onmouseover="starPic(5)" onmouseout="hide(5)" onclick="qd(5)">
+            <div class="text0">
+                <p class="t1">1分很不满意</p>
+                <span class="t2">差的太离谱，与卖家描述的严重不符，非常不满</span>
+            </div>
+            <div class="text1">
+                <p class="t1">1分很不满意</p>
+                <span class="t2">差的太离谱，与卖家描述的严重不符，非常不满</span>
+            </div>
+            <div class="text2">
+                <p class="t1">1分很不满意</p>
+                <span class="t2">差的太离谱，与卖家描述的严重不符，非常不满</span>
+            </div>
+            <div class="text3">
+                <p class="t1">1分很不满意</p>
+                <span class="t2">差的太离谱，与卖家描述的严重不符，非常不满</span>
+            </div>
+            <div class="text4">
+                <p class="t1">1分很不满意</p>
+                <span class="t2">差的太离谱，与卖家描述的严重不符，非常不满</span>
+            </div>
+        </div>
+        <div class="area"><textarea rows="10" cols="50"></textarea></div>
+        <input  class="but" type="button" value="公开评论" >
+    </div>
+</body>
+ <!-- for(var i = 0;i < commant.length;i++)
+    {   
+        star[i].index=i;
+        star[i].onmouseover=function(){          
+            commant[this.index].style.display='block';
+            for(var j = 0;j < this.index + 1;j++)
+            {
+                if(this.index < 2)
+                {
+                    star[j].src = "images/star1.png";
+
+                }
+                else
+                    star[j].src = "images/star2.png";
+            }
+        }
+        star[i].onmouseout=function(){          
+           commant[this.index].style.display='none';   
+           for(var j = 0;j < this.index + 1;j++)
+            {
+                star[j].src = "images/star0.png";
+            }            
+        }
+
+        star[i].onclick = function(){
+            commant[this.index].style.display='block';
+            for(var j = 0;j < this.index + 1;j++)
+            {
+                if(this.index < 2)
+                {
+                    star[j].src = "images/star1.png";
+                     console.log(this.index);
+                }
+                else
+                    star[j].src = "images/star2.png";
+            }
+        }
+    } -->
+<script src="lab3.js"></script>
+</html>
+
+
+   
+        

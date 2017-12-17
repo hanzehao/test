@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+textarea{
+    resize:none;
+}
+.body{
+    margin: 0 auto;
+    width: 400px;
+    background: url(images/bg.jpg) repeat-x;
+}
+p{
+    padding-top: 3px;
+}
+.img{
+    width: 200px;
+    height: 20px;
+    margin-top: 30px;
+}
+.img img{
+    position: relative;
+    top: -20px;
+    display: inline;
+    margin-right: 10px;
+}
+.text0{
+    padding-top: 1px;
+    width: 200px;
+    height: 68px;
+    position: relative;
+    left: -90px;
+    top: -24px;
+    background: url(images/text_bg.jpg);
+    display: none;
+}
+.text1{
+    width: 200px;
+    height: 68px;
+    position: relative;
+    left: -56px;
+    top: -24px;
+    background: url(images/text_bg.jpg);
+    display: none;
+}
+.text2{
+    width: 200px;
+    height: 68px;
+    position: relative;
+    left: -24px;
+    top: -24px;
+    background: url(images/text_bg.jpg);
+    display: none;
+}
+.text3{
+    width: 200px;
+    height: 68px;
+    position: relative;
+    left: 10px;
+    top: -24px;
+    background: url(images/text_bg.jpg);
+    display: none;
+}
+.text4{
+    width: 200px;
+    height: 68px;
+    position: relative;
+    left: 43px;
+    top: -24px;
+    background: url(images/text_bg.jpg);
+    display: none;
+}
+.area{
+    margin: 0 auto;
+    width: 350px;
+}
+.t1 {
+    padding-left: 14px;
+    font-size: 15px;
+    color: orangered;
+    font-weight: 600;
+    margin-top: 2px;
+}
+.t2{
+    padding-left: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+.but{
+    background: url(images/sanjiao.png) no-repeat right 5px;
+    width: 70px;
+    border: 1px solid black;
+    position: relative;
+    left: 290px;
+}
