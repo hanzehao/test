@@ -1,0 +1,49 @@
+﻿<!DOCTYPE HTML>
+<html>
+ <head>
+  <title>图片自动滚动</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="js/autoChange.js"></script>
+ </head>
+
+ <body>
+ <div id="picScroll">
+	<span id="picScroll1">
+		<img src="images/1.jpg" />
+		<img src="images/2.jpg" />
+		<img src="images/3.jpg" />
+		<img src="images/4.jpg" />
+		<img src="images/5.jpg" />
+		<img src="images/6.jpg" />
+		<img src="images/7.jpg" />
+		<img src="images/8.jpg" />
+	</span>
+	<span id="picScroll2">as</span>
+ </div> 
+ </body>
+ <script type="text/javascript">
+     var picScroll = document.getElementById('picScroll');
+     var picScroll1 = document.getElementById('picScroll1');
+     var picScroll2 = document.getElementById('picScroll2');
+
+
+     function changeToLeft(){
+         if(picScroll.scrollLeft >= picScroll1.offsetWidth)
+             picScroll.scrollLeft = 0;
+         else
+             picScroll.scrollLeft += 1 ;
+     }
+
+     picScroll2.innerHTML = picScroll1.innerHTML;
+
+     var timer = setInterval(changeToLeft,10);
+
+     picScroll.onmouseover = function(){
+         clearInterval(timer);
+     };
+
+     picScroll.onmouseout = function(){
+         timer = setInterval(changeToLeft,10)
+     };
+ </script>
+</html>

@@ -1,0 +1,15 @@
+*{
+    margin:0;
+    padding:0;
+}
+#picScroll{
+    margin:0 auto;
+    height:300px;
+    width:600px;
+    white-space: nowrap;
+    overflow:hidden;
+}
+img{
+    width:300px;
+
+}
