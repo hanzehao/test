@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FL Studio</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #3a444e;
+            position: relative;
+        }
+        ul,ol li {
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+            color: #FFF;
+        }
+        #head{
+            background: url(images/f12pctop.jpg) no-repeat center;
+            height: 530px;
+            position: relative;
+            margin-bottom: 30px;
+        }
+        #tit{
+            text-align: center;
+            padding-top: 120px;
+        }
+        #tit p{
+            padding-top: 30px;
+            font-size: 50px;
+            color: white;
+        }
+        #tit input{
+            width: 200px;
+            height: 60px;
+            font-size: 30px;
+            margin-top: 40px;
+            background-color: #ff7612;
+            border: none;
+        }
+        #nav>ul>li{
+            float: left;
+        }
+        #nav{
+            margin: 0 auto;
+            padding-top: 4px;
+            height: 30px;
+            width: 1300px;
+            font-size: 20px;
+            background-color: #3a444e;
+        }
+        #nav>ul>li{
+            padding-right: 140px;
+        }
+        #index>ul{
+            display: none;
+        }
+        #video>ul{
+            display: none;
+        }
+        #nav>ul>li a:hover{
+            color: #ff7612;
+        }
+        #index>a{
+            color: #ff7612;
+        }
+        #fruit{
+            float: left;
+            position: relative;
+            top: 20px;
+            left: 100px;
+        }
+        .imgBox{
+            margin: 0 auto;
+            width: 1600px;
+            clear: right;
+        }
+        .imgBox>div{
+            float: left;
+            text-align: center;
+        }
+        .imgBox1{
+            background: url(images/fls1.jpg);
+            width: 400px;
+            height: 200px;
+        }
+        .imgBox2{
+            background: url(images/fls2.jpg);
+            width: 400px;
+            height: 200px;
+        }
+        .imgBox3{
+            background: url(images/fls3.jpg);
+            width: 400px;
+            height: 200px;
+        }
+        .imgBox4{
+            background: url(images/fls4.jpg);
+            width: 400px;
+            height: 200px;
+        }
+        .imgBox>div>a{
+            font-size: 24px;
+            line-height: 200px;
+            margin: 0 auto;
+        }
+        .imgBox>div>a:hover{
+            color: #ff7612;
+        }
+        #picScroll{
+            margin:0 auto;
+            height:150px;
+            width:800px;
+            white-space: nowrap;
+            overflow:hidden;
+        }
+        #picScroll img{
+            padding-right: 30px;
+        }
+        #logoIn{
+            width: 500px;
+            height: 300px;
+            background-color: #ff7612;
+            margin: 0 auto;
+            position: relative;
+            top: -200px;
+        }
+        #logoIn img{
+            padding-left: 400px;
+        }
+        #logoIn form{
+            width: 300px;
+            margin: 0 auto;
+        }
+        #logoIn form span{
+            font-size: 20px;
+            color: #3a444e;
+        }
+        #logoIn form input{
+            height: 20px;
+        }
+        #yes{
+            border: none;
+            width: 60px;
+            font-size: 20px;
+            position: relative;
+            top: 2px;
+            left: 20px;
+            border-radius: 20%;
+        }
+        #no{
+            border: none;
+            width: 60px;
+            position: relative;
+            left: 140px;
+            font-size: 20px;
+            border-radius: 20%;
+        }
+        .new{
+            clear: both;
+            margin: 0 auto;
+        }
+        .new>span{
+            height:80px;
+            line-height:80px;
+            text-align:center;
+            display:block;
+            margin: 0 auto;
+            font-size: 30px;
+            color: #FFFFFF;
+        }
+        .new>img{
+            display: block;
+            height: 500px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        #foot{
+            margin: 0 auto;
+            text-align: center;
+            width: 800px;
+            height: 100px;
+        }
+        #foot>div>div>img{
+            width: 180px;
+            padding-left: 30px;
+            padding-right: 20px;
+        }
+        #foot>div>div{
+            float: left;
+            text-align: center;
+            margin:  0 auto;
+        }
+        #prev{
+            position: relative;
+            left: -500px;
+            top: 100px;
+        }
+        #next{
+            position: relative;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="nav">
+            <ul>
+                <li id="index"><a href="#">FL STUDIO</a>
+                    <ul>
+                        <li><a href="http://www.flstudiochina.com/">中文版官网</a></li>
+                        <li><a href="http://www.image-line.com/flstudio/">英文版官网</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">移动端</a></li>
+                <li><a href="#">支持</a></li>
+                <li><a href="#">下载</a></li>
+                <li id="video"><a href="#">视频教程</a>
+                    <ul>
+                        <li><a href="http://www.flstudio.cn/forum.php">社区教程</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCtYw-H_L5D09T9uWeNBUvqg/">YouTube教程</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+        <div id="fruit"><img src="images/f12fruit.png" ></div>
+        <div id="tit">
+            <p>FL STUDIO</p>
+            <p>水果,让你的音乐突破想象力的限制!</p>
+            <input type="button" value="立即下载" id="downLode">
+        </div>
+        <div id="logoIn" style="display: none">
+            <img src="images/fislogo.png">
+            <form>
+                <span><b>用户名&nbsp;&nbsp;&nbsp;</b></span>
+                <input id="userName" type="text" value=""><br><br>
+                <span><b>密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></span>
+                <input id="passWord" type="password" value=""><br><br>
+                <span><b>再次输入</b></span>
+                <input id="pssWordTwo" type="password" value=""><br><br>
+                <input id="yes" type="button" value="确定" style="height: 40px;">
+                <input id="no" type="button" value="返回" style="height: 40px;">
+            </form>
+        </div>
+    </div>
+    <div id="content">
+        <div class="imgBox">
+            <div class="imgBox1">
+                <a href="#">简单易上手</a>
+            </div>
+            <div class="imgBox2">
+                <a href="#">简单易上手</a>
+            </div>
+            <div class="imgBox3">
+                <a href="#">简单易上手</a>
+            </div>
+            <div class="imgBox4">
+                <a href="#">简单易上手</a>
+            </div>
+        </div>
+        <div class="new">
+            <span>所有都是新的</span>
+            <div id="picScroll">
+                <span id="picScroll1">
+                    <img src="images/fg1.jpg" />
+                    <img src="images/fg2.jpg" />
+                    <img src="images/fg3.jpg" />
+                    <img src="images/fg4.jpg" />
+                    <img src="images/gn1.jpg" />
+                    <img src="images/gn2.jpg" />
+                    <img src="images/gn3.jpg" />
+                    <img src="images/gn4.jpg" />
+                </span>
+                <span id="picScroll2"></span>
+            </div>
+            <span>全新的界面</span>
+            <img src="images/fls12bg1.jpg">
+            <span>所有窗口可以拆卸</span>
+            <img src="images/fls12bg2.jpg">
+            <span>超级用户</span>
+        </div>
+    </div>
+    <div id="foot">
+        <img src="images/lprev.png" id="prev">
+        <div>
+            <div>
+                <img src="images/tou1.png"><br>
+                <a>不认识，反正是大佬就对了</a>
+            </div>
+            <div>
+                <img src="images/tou2.png"><br>
+                <a>不认识，反正是大佬就对了</a>
+            </div>
+            <div>
+                <img src="images/tou3.png"><br>
+                <a>不认识，反正是大佬就对了</a>
+            </div>
+        </div>
+        <div style="display: none;">
+            <div>
+                <img src="images/tou4.png"><br>
+                <a>不认识，反正是大佬就对了</a>
+            </div>
+            <div>
+                <img src="images/tou5.png"><br>
+                <a>不认识，反正是大佬就对了</a>
+            </div>
+            <div>
+                <img src="images/tou6.png"><br>
+                <a>不认识，反正是大佬就对了</a>
+            </div>
+        </div>
+        <img src="images/rnext.png" id="next">
+    </div>
+</body>
+
+<script type="text/javascript">
+    var picScroll = document.getElementById('picScroll');
+    var picScroll1 = document.getElementById('picScroll1');
+    var picScroll2 = document.getElementById('picScroll2');
+
+    function changeToLeft(){
+        if(picScroll.scrollLeft >= picScroll1.offsetWidth)
+            picScroll.scrollLeft = 0;
+        else
+            picScroll.scrollLeft += 1 ;
+    }
+
+    picScroll2.innerHTML = picScroll1.innerHTML;
+
+    var timer = setInterval(changeToLeft,20);
+
+    picScroll.onmouseover = function(){
+        clearInterval(timer);
+    };
+
+    picScroll.onmouseout = function(){
+        timer = setInterval(changeToLeft,20)
+    };
+
+    var index = document.getElementById('index');
+    var video = document.getElementById('video');
+    var indexUl = index.getElementsByTagName('ul')[0];
+    var videoUl = video.getElementsByTagName('ul')[0];
+
+    index.onmousemove = function (ev) {
+        indexUl.style.display = 'block';
+    };
+    index.onmouseout = function (ev) {
+        indexUl.style.display = 'none';
+    };
+    video.onmousemove = function (ev) {
+        videoUl.style.display = 'block';
+    };
+    video.onmouseout = function (ev) {
+        videoUl.style.display = 'none';
+    };
+
+
+
+    var downLode = document.getElementById('downLode');
+    var logoIn = document.getElementById('logoIn');
+    var yes = document.getElementById('yes');
+    var no = document.getElementById('no');
+    var userName = document.getElementById('userName');
+    var passWord = document.getElementById('passWord');
+    var pssWordTwo = document.getElementById('pssWordTwo');
+
+    downLode.onclick = function (e) {
+        logoIn.style.display = 'block';
+    };
+
+    yes.onclick = function (e) {
+        if(userName.value != '' && passWord.value == pssWordTwo.value && passWord.value != '' && pssWordTwo.value != '')
+            confirm("注册成功");
+        else
+            confirm("注册失败");
+    };
+
+    no.onclick = function (ev) {
+        logoIn.style.display = 'none';
+    };
+
+    var prev = document.getElementById('prev');
+    var next = document.getElementById('next');
+    var foot = document.getElementById('foot');
+    var footDiv = foot.getElementsByTagName('div');
+    var arrIndex = [0,4];
+    var i = 0;
+    function changeNext() {
+        footDiv[arrIndex[i%2]].style.display = 'none';
+        i++;
+        footDiv[arrIndex[i%2]].style.display = 'block';
+    }
+    prev.onclick = function (ev) {
+        footDiv[arrIndex[i%2]].style.display = 'none';
+        i--;
+        if(i < 0)
+            i = 1;
+        footDiv[arrIndex[i%2]].style.display = 'block';
+    };
+
+    next.onclick = function (ev) {
+       changeNext();
+    };
+
+    var timer1 = setInterval(changeNext,1000);
+    foot.onmouseover = function (ev) {
+        clearInterval(timer1);
+    }
+    foot.onmouseout = function (ev) {
+        timer1 = setInterval(changeNext,1000);
+    }
+</script>
+</html>
